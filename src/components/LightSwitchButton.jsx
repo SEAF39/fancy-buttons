@@ -1,5 +1,4 @@
 /* LightSwitchButton.jsx */
-
 import React, { useState } from 'react';
 
 function LightSwitchButton() {
@@ -7,16 +6,8 @@ function LightSwitchButton() {
 
   return (
     <button className="LightSwitchButton">
-      {light === 'on' && (
-        <span>
-          <i>💡</i> I'm on!
-        </span>
-      )}
-      {light === 'off' && (
-        <span className="off">
-          <i>💡</i> I'm off!
-        </span>
-      )}
+      {light === 'on' && <span><i>💡</i> I'm on!</span>}
+      {light === 'off' && <span className="off"><i>💡</i> I'm off!</span>}
     </button>
   );
 }
