@@ -9,7 +9,11 @@ function TextRepeaterButton() {
     textArray.push(<span key={i}>I like this text</span>);
   }
 
-  return <button className="TextRepeaterButton">{textArray}</button>;
+  return (
+    <button className="TextRepeaterButton">
+      {textArray}
+    </button>
+  );
 }
 
 export default TextRepeaterButton;
