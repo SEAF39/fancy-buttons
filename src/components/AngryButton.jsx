@@ -14,8 +14,10 @@ function AngryButton(props) {
       className="AngryButton"
       onClick={handleClick}
     >
-      {anger < 1 && <span>{props.message}</span>}
-      {anger > 1 && <span>{props.angryMessage}</span>}
+       {/*// If anger is less than 1, display a warning message*/}
+       {anger < 1 && <span>I'm warning you</span>}
+      {/*// If anger is greater than 1, display an angry message*/}
+      {anger > 1 && <span>PLEASE STOP:,I WARNED YOU!</span>}
     </button>
   );
 }

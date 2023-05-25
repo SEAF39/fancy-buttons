@@ -5,14 +5,16 @@ function TextRepeaterButton(props) {
   const [repetitions, setRepetitions] = useState(1);
   const textArray = [];
 
-  for (let i = 0; i < repetitions; i++) {
-    textArray.push(<span key={i}>{props.text}</span>);
-  }
-
   const handleClick = () => {
     setRepetitions(repetitions + 1);
   };
 
+
+  for (let i = 0; i < repetitions; i++) {
+    textArray.push(<span key={i}>{props.text}I like this text!</span>);
+  }
+
+ 
   return (
     <button className="TextRepeaterButton" onClick={handleClick}>
       {textArray}
